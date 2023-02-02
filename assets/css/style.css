@@ -50,10 +50,6 @@ body {
 
 /* Início Modal */
 
-h2 {
-  margin-bottom: 1rem;
-}
-
 #fade {
   position: fixed;
   top: 0;
