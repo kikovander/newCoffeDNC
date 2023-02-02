@@ -1,0 +1,114 @@
+body {
+  padding: 1rem;
+}
+
+/* Início Config. Geral Botões */
+
+.botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40px;
+}
+
+.btn {
+  width: 202px;
+  height: 48px;
+  background: #2a3342;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #f6f5fb;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.close-modal {
+  width: 45px;
+  height: 45px;
+  background: #2a3342;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #f6f5fb;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Fim Config. Geral Botões */
+
+/* Início Botões CARDS */
+
+#botao1,
+#botao2,
+#botao3,
+#botao4 {
+  display: none;
+}
+
+/* Fim Botões CARDS */
+
+/* Início Modal */
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
+
+/* Fim Modal */
