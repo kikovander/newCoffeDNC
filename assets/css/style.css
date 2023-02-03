@@ -23,6 +23,18 @@ body {
   font-size: 20px;
 }
 
+.btnContato {
+  width: 253px;
+  height: 48px;
+  background: #2a3342;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #f6f5fb;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .close-modal {
   width: 45px;
   height: 45px;
@@ -73,8 +85,15 @@ body {
   z-index: 10;
 }
 
-#fade,
+#fade {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
 #modal {
+  display: flex;
+  flex-direction: column;
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
@@ -82,11 +101,19 @@ body {
 
 .modal-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+}
+
+.modal-header > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 39px;
+  color: #000000;
+  padding-left: 6.5vw;
 }
 
 .modal-body {
